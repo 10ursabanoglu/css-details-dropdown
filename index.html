@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="author" content="Onur Sabanoglu">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown Menu</title>
+
+  <style>
+
+  * {
+    box-sizing: border-box
+  }
+  body {
+    font-family: sans-serif;
+  }
+  a {
+    text-decoration: none;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+  }
+  details {
+    position: relative;
+    display: inline-block;
+    user-select: none;
+  }
+  details span {
+    cursor: pointer
+  }
+  details[open] > summary:before {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    content: '';
+  }
+  summary:focus {
+    outline:0
+  }
+  summary::-webkit-details-marker {
+    display: none
+  }
+  .menu {
+    position: absolute;
+    left: 0;
+    top auto;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    width: 16rem;
+    background-color: #fff;
+    padding: 8px;
+    border: 1px solid #eee;
+    border-radius: 4px
+  }
+  .menu .nav-item {
+    width: 100%;
+  }
+  .menu .nav-item .nav-link {
+    width: 100%;
+    display: inline-block;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    border-radius: 4px
+  }
+  .menu .nav-item .nav-link:hover {
+    background-color: #ddd
+  }
+  </style>
+</head>
+<body>
+  <details>
+    <summary>
+      <span>
+        <svg width="32" height="32" viewBox="0 0 448 512"><path fill="currentColor" d="M442 114H6a6 6 0 01-6-6V84a6 6 0 016-6h436a6 6 0 016 6v24a6 6 0 01-6 6zm0 160H6a6 6 0 01-6-6v-24a6 6 0 016-6h436a6 6 0 016 6v24a6 6 0 01-6 6zm0 160H6a6 6 0 01-6-6v-24a6 6 0 016-6h436a6 6 0 016 6v24a6 6 0 01-6 6z"></path></svg>
+      </span>
+    </summary>
+    <nav class="menu">
+      <ul>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Homepage</a>
+        </li>
+        <li class="nav-item">
+          <a class=nav-link href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class=nav-link href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class=nav-link href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </details>
+</body>
+</html>
