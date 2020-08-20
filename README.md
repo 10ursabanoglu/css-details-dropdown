@@ -1,4 +1,4 @@
-# details-summary-dropdown
+# css-details-dropdown
 Dropdown created using only CSS
 
 #### Dropdown Menu Default
