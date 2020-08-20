@@ -42,6 +42,14 @@ li {
   list-style: none;
 }
 
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
 details {
   position: relative;
   display: inline-block;
@@ -70,7 +78,7 @@ summary::-webkit-details-marker {
   display: none
 }
 
-.menu {
+.dropdown-menu {
   position: absolute;
   left: 0;
   top: auto;
@@ -82,11 +90,16 @@ summary::-webkit-details-marker {
   border-radius: var(--space-4);
 }
 
-.menu .nav-item {
+.dropdown-menu.dropright {
+  right: 0;
+  left: auto;
+}
+
+.dropdown-menu .nav-item {
   width: 100%;
 }
 
-.menu .nav-item .nav-link {
+.dropdown-menu .nav-item .nav-link {
   width: 100%;
   display: inline-block;
   padding: var(--space-12);
@@ -95,6 +108,6 @@ summary::-webkit-details-marker {
   border-radius: var(--space-4);
 }
 
-.menu .nav-item .nav-link:hover {
+.dropdown-menu .nav-item .nav-link:hover {
   background-color: var(--gray-200);
 }
