@@ -59,5 +59,5 @@ And that's it, Works perfectly smoothly!.
 
 #### Please have a look at the resources below:
 
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary
+- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details
+- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary
